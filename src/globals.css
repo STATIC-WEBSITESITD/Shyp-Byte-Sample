@@ -1,2 +1,155 @@
 @import url("../public/assets/css/bootstrap.min.css");
 @import url("../public/assets/css/main.css");
+
+/* Demo 5 banner: wave only behind the image column */
+.banner-five__media {
+  overflow: hidden;
+}
+
+.banner-five__wave {
+  pointer-events: none;
+  opacity: 0.9;
+  transform: translateY(12%);
+}
+
+/* How It Works — milestone step strip */
+.how-it-works__rail {
+  padding-top: 0.25rem;
+}
+
+.how-it-works__track {
+  position: absolute;
+  top: 1.75rem;
+  left: 8%;
+  right: 8%;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #f5b800 0%,
+    #f97316 20%,
+    #ef4444 40%,
+    #8b5cf6 60%,
+    #005eff 80%,
+    #0c848d 100%
+  );
+  z-index: 0;
+}
+
+.how-it-works__steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.how-it-works__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+}
+
+.how-it-works__node-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+.how-it-works__node {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(7, 32, 50, 0.18);
+  border: 4px solid #fff;
+  flex-shrink: 0;
+}
+
+.how-it-works__node--sm {
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 0.875rem;
+  border-width: 3px;
+}
+
+.how-it-works__flag {
+  position: absolute;
+  top: -1.15rem;
+  right: -0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #0c848d;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  box-shadow: 0 4px 10px rgba(12, 132, 141, 0.35);
+}
+
+.how-it-works__icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.how-it-works__card {
+  width: 100%;
+}
+
+.how-it-works__card h5 {
+  font-size: clamp(0.95rem, 0.2vw + 0.9rem, 1.05rem);
+}
+
+.how-it-works__mobile-rail {
+  width: 2.75rem;
+  flex-shrink: 0;
+}
+
+.how-it-works__mobile-line {
+  width: 6px;
+  min-height: 2rem;
+  margin-block: 0.35rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 1199.98px) {
+  .how-it-works__strip {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .how-it-works__rail {
+    min-width: 920px;
+  }
+}
+
+/* Why Choose — Demo 5 style media panel */
+.why-choose__media {
+  background: linear-gradient(180deg, #d7f2ff 0%, #eef7ff 55%, #f5f5fd 100%);
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  min-height: 100%;
+}
+
+.why-choose .group:hover .why-choose__icon {
+  background-color: #fff !important;
+  color: var(--main-600) !important;
+}

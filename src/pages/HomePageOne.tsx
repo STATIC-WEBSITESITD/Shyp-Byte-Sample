@@ -3,7 +3,9 @@ import type { FC } from "react";
 import TopHeaderOne from "../components/TopHeaderOne";
 import HeaderOne from "../components/HeaderOne";
 // import TopFeaturesOne from "../components/TopFeaturesOne";
-import BannerOne from "../components/BannerOne";
+import BannerFive from "../components/BannerFive";
+import HowItWorksOne from "../components/HowItWorksOne";
+import WhyChooseOne from "../components/WhyChooseOne";
 // import BrandSliderOne from "../components/BrandSliderOne";
 import AboutOne from "../components/AboutOne";
 import ShippingFeaturesOne from "../components/ShippingFeaturesOne";
@@ -28,7 +30,9 @@ const HomePageOne: FC = () => {
       <TopHeaderOne />      
       <HeaderOne />      
       {/* <TopFeaturesOne /> */}      
-      <BannerOne />      
+      <BannerFive />
+      <HowItWorksOne />
+      <WhyChooseOne />
       {/* <BrandSliderOne /> */}      
       <AboutOne />      
       <ShippingFeaturesOne />      

@@ -4,6 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    watch: {
+      // Avoid EBUSY crashes on Windows when antivirus locks new public assets
+      usePolling: true,
+      interval: 1000,
+    },
+  },
   build: {
     rollupOptions: {
       output: {
