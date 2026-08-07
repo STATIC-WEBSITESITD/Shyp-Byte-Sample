@@ -1,14 +1,21 @@
 import type { FC } from "react";
 import SectionHead from "./SectionHead";
 
-const hubs = [
+const hubs: {
+  id: string;
+  label: string;
+  sub: string;
+  x: number;
+  y: number;
+  hub?: boolean;
+}[] = [
   { id: "in", label: "India", sub: "Pickup Hub", x: 58, y: 52, hub: true },
   { id: "ae", label: "UAE", sub: "Middle East", x: 52, y: 42 },
   { id: "gb", label: "UK", sub: "Europe", x: 42, y: 28 },
   { id: "us", label: "USA", sub: "Americas", x: 22, y: 38 },
   { id: "sg", label: "Singapore", sub: "Asia Pacific", x: 68, y: 58 },
   { id: "au", label: "Australia", sub: "Oceania", x: 78, y: 72 },
-] as const;
+];
 
 const routes = [
   { from: "in", to: "ae" },
