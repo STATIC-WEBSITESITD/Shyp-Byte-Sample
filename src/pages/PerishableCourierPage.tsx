@@ -153,10 +153,12 @@ const PerishableCourierPage: FC = () => {
 
     if (!senderType) {
       setSenderTypeError(true);
+      setIsSubmitting(false);
       return;
     }
     if (!weight) {
       setWeightError(true);
+      setIsSubmitting(false);
       return;
     }
     if (selectedGoods.length === 0) {

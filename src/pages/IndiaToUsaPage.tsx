@@ -183,10 +183,10 @@ const IndiaToUsaPage: FC = () => {
                 Door Pickup | Express Delivery | Live Tracking | Customs Support
               </p>
               <a
-                href='tel:+917304617614'
+                href='tel:+917208832472'
                 className='tw-mt-5 hover-black hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-56-px tw-py-5 fw-semibold rounded-pill border-0 text-decoration-none'
                 data-block='button'
-                aria-label='Call +91 7304617614 to book your USA courier'
+                aria-label='Call +91 7208832472 to book your USA courier'
               >
                 <span className='button__flair' />
                 <span className='button__label'>Book Your USA Courier</span>
@@ -473,7 +473,7 @@ const IndiaToUsaPage: FC = () => {
             </p>
             <div className='tw-mt-10 position-relative z-1'>
               <a
-                href='tel:7304617614'
+                href='tel:7208832472'
                 className='hover-black hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-56-px tw-py-5 fw-semibold rounded-pill border-0 text-decoration-none'
                 data-block='button'
               >

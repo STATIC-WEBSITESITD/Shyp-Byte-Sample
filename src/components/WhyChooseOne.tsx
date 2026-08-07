@@ -1,4 +1,6 @@
 import type { FC } from "react";
+import PrimaryButton from "./PrimaryButton";
+import SectionHead from "./SectionHead";
 
 const features = [
   {
@@ -25,12 +27,12 @@ const features = [
 
 const WhyChooseOne: FC = () => {
   return (
-    <section className='why-choose py-120'>
+    <section className='why-choose py-120 section-flow-muted'>
       <div className='container'>
         <div className='row gy-5 align-items-center tw-mb-12 tw-mb-lg-14'>
           <div className='col-lg-6'>
             <div
-              className='why-choose__media tw-rounded-3xl d-flex align-items-center justify-content-center'
+              className='why-choose__media d-flex align-items-center justify-content-center'
               data-aos='fade-up'
               data-aos-duration={800}
             >
@@ -43,28 +45,13 @@ const WhyChooseOne: FC = () => {
           </div>
 
           <div className='col-lg-6'>
-            <div
-              className='bg-main-600 tw-py-2 tw-px-7 rounded-pill text-white fw-bold text-capitalize tw-leading-none d-inline-flex align-items-center tw-gap-2 tw-mb-6 min-w-max common-shadow-twentyNine'
-              data-aos='fade-up'
-              data-aos-duration={600}
-            >
-              Why Choose Shyp Byte
-            </div>
-            <h2
-              className='splitTextStyleOne text-heading tw-leading-none'
-              data-aos='fade-up'
-              data-aos-duration={700}
-            >
-              Built for People Who Just Want to Ship — Not Negotiate
-            </h2>
-            <p
-              className='text-neutral-600 tw-text-lg tw-mt-605 fw-medium tw-leading-145 max-w-570-px mb-0'
-              data-aos='fade-up'
-              data-aos-duration={800}
-            >
-              Transparent rates, one app for every step, and real people when you
-              need them — so shipping stays simple from pickup to delivery.
-            </p>
+            <SectionHead
+              align='start'
+              eyebrow='Why Choose Shyp Byte'
+              title='Built for People Who Just Want to Ship — Not Negotiate'
+              description='Transparent rates, one app for every step, and real people when you need them — so shipping stays simple from pickup to delivery.'
+              className='mb-0'
+            />
 
             <div className='d-flex flex-column tw-gap-5 tw-mt-10'>
               {[
@@ -78,7 +65,7 @@ const WhyChooseOne: FC = () => {
                   data-aos='fade-up'
                   data-aos-duration={700 + i * 120}
                 >
-                  <span className='tw-w-8 tw-h-8 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center tw-text-lg text-heading flex-shrink-0'>
+                  <span className='about-home__check tw-text-lg'>
                     <i className='ph-bold ph-check' />
                   </span>
                   <span className='text-heading tw-text-lg fw-semibold'>{item}</span>
@@ -86,21 +73,8 @@ const WhyChooseOne: FC = () => {
               ))}
             </div>
 
-            <div
-              className='tw-mt-11'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
-              <a
-                href='https://play.google.com/store/apps'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-9 rounded-pill tw-py-505 fw-semibold common-shadow-inset-one'
-                data-block='button'
-              >
-                <span className='button__flair' />
-                <span className='button__label'>Download app now</span>
-              </a>
+            <div className='tw-mt-11' data-aos='fade-up' data-aos-duration={1000}>
+              <PrimaryButton />
             </div>
           </div>
         </div>
@@ -113,14 +87,14 @@ const WhyChooseOne: FC = () => {
               data-aos='fade-up'
               data-aos-duration={600 + i * 100}
             >
-              <div className='tw-rounded-2xl bg-neutral-50 bg-hover-app-landing tw-py-10 tw-px-7 border border-neutral-100 group animation-item group-item tw-transition tw-duration-200 h-100'>
-                <span className='why-choose__icon tw-w-16 tw-h-16 rounded-circle d-flex align-items-center justify-content-center common-shadow-fifteen tw-mb-8 bg-white text-main-600 tw-transition tw-duration-200'>
-                  <i className={`ph-bold ${feature.icon} tw-text-3xl animate__heartBeat`} />
+              <div className='why-choose__card bg-white tw-py-10 tw-px-7 h-100 group'>
+                <span className='why-choose__icon tw-w-14 tw-h-14 d-flex align-items-center justify-content-center tw-mb-8 bg-main-50 text-main-600'>
+                  <i className={`ph-bold ${feature.icon} tw-text-2xl`} />
                 </span>
-                <h4 className='splitTextStyleOne tw-mb-4 group-hover-text-white tw-transition tw-duration-200 tw-text-xl'>
+                <h4 className='splitTextStyleOne tw-mb-4 text-heading tw-text-xl'>
                   {feature.title}
                 </h4>
-                <p className='splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 tw-transition tw-duration-200 mb-0 tw-leading-relaxed'>
+                <p className='splitTextStyleOne fw-medium text-neutral-500 mb-0 tw-leading-relaxed'>
                   {feature.desc}
                 </p>
               </div>

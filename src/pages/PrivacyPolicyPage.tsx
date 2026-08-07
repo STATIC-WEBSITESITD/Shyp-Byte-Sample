@@ -117,8 +117,8 @@ const PrivacyPolicyPage: FC = () => {
                 </p>
                 <p className='tw-text-body tw-leading-relaxed'>
                   <strong>Phone:</strong>{" "}
-                  <a href='tel:+917304617614' className='text-decoration-none'>
-                    +91 7304617614
+                  <a href='tel:+917208832472' className='text-decoration-none'>
+                    +91 7208832472
                   </a>
                 </p>
               </div>

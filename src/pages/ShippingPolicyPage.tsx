@@ -52,7 +52,7 @@ const ShippingPolicyPage: FC = () => {
           <div className='row justify-content-center'>
             <div className='col-lg-10'>
               <div className='tw-prose tw-prose-lg tw-max-w-none'>
-                {/* Shipping Policy */}
+                
                 <h2 className='h4 fw-semibold tw-mb-4'>Shipping Policy</h2>
                 <p className='tw-text-body tw-leading-relaxed tw-mb-5'>
                   Shipping policy cannot be defined since it is a courier service. It will differ
@@ -67,7 +67,7 @@ const ShippingPolicyPage: FC = () => {
                   of 1 to 15 working days.
                 </p>
 
-                {/* Refund Policy */}
+                
                 <h2 className='h4 fw-semibold tw-mt-6 tw-mb-4'>Refund Policy</h2>
                 <p className='tw-text-body tw-leading-relaxed tw-mb-5'>
                   Refunds will not be entertained. However, should the management feel that refund is
@@ -76,7 +76,7 @@ const ShippingPolicyPage: FC = () => {
                   case-to-case basis.
                 </p>
 
-                {/* Terms of Use */}
+                
                 <h2 className='h4 fw-semibold tw-mt-6 tw-mb-4'>Terms of Use</h2>
                 <p className='tw-text-body tw-leading-relaxed tw-mb-4'>
                   Terms &amp; Conditions of use of the ShypByte website
@@ -197,8 +197,8 @@ const ShippingPolicyPage: FC = () => {
                     info@shypbyte.com
                   </a>{" "}
                   or call{" "}
-                  <a href='tel:+917304617614' className='text-decoration-none'>
-                    +91 7304617614
+                  <a href='tel:+917208832472' className='text-decoration-none'>
+                    +91 7208832472
                   </a>
                   .
                 </p>

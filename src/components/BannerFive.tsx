@@ -3,7 +3,7 @@ import type { FC } from "react";
 const BannerFive: FC = () => {
   return (
     <section className='banner-five'>
-      <div className='tw-pt-100-px tw-pb-12 tw-mx-48-px position-relative gradient-bg-seven rounded-top-30-px z-1 overflow-hidden'>
+      <div className='tw-py-100-px tw-mx-48-px position-relative gradient-bg-seven rounded-top-30-px z-1 overflow-hidden'>
         <img
           src='/assets/images/shapes/wave-line-shadow.png'
           alt=''
@@ -20,14 +20,14 @@ const BannerFive: FC = () => {
                 data-aos-anchor-placement='top-bottom'
                 data-aos-duration={600}
               >
-                Global Shipping
+                Send Courier Worldwide
               </div>
-              <h1 className='splitTextStyleOne text-heading text-capitalize tw-leading-none'>
-                Ship with confidence. Grow your brand worldwide.
+              <h1 className='splitTextStyleOne text-heading tw-leading-none'>
+                Send courier with Shyp Byte — fast, simple &amp; reliable.
               </h1>
               <p className='text-neutral-600 tw-text-xl tw-mt-605 splitTextStyleOne fw-medium tw-leading-145 max-w-548-px'>
-                ShypByte turns international shipping and cross-border ecommerce
-                logistics into a growth engine — from India to customers worldwide.
+                Book international courier from India in minutes. Doorstep pickup,
+                transparent rates, customs support, and live tracking — all in one app.
               </p>
               <div className='d-flex align-items-center tw-gap-405 tw-mt-10 flex-wrap'>
                 <div
@@ -36,13 +36,13 @@ const BannerFive: FC = () => {
                   data-aos-duration={800}
                 >
                   <a
-                    href='https://play.google.com/store/apps'
+                    href='https://play.google.com/store/apps/details?id=com.shypbyte.customer'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='hover--translate-y-1 active--translate-y-scale-9 tw-rounded-2xl common-shadow-twentyEight d-inline-block'
                   >
                     <img
-                      src='/assets/images/icons/store-two1.png'
+                      src='/assets/images/icons/store-two2.png'
                       alt='Get it on Google Play'
                     />
                   </a>
@@ -59,7 +59,7 @@ const BannerFive: FC = () => {
                     className='hover--translate-y-1 active--translate-y-scale-9 tw-rounded-2xl common-shadow-twentyEight d-inline-block'
                   >
                     <img
-                      src='/assets/images/icons/store-two2.png'
+                      src='/assets/images/icons/store-two1.png'
                       alt='Download on the App Store'
                     />
                   </a>
@@ -71,7 +71,7 @@ const BannerFive: FC = () => {
               <div className='text-center text-lg-end'>
                 <img
                   src='/assets/images/thumbs/banner-five-thumb.png'
-                  alt='ShypByte app preview'
+                  alt='Send courier with Shyp Byte app'
                   className='img-fluid'
                   data-aos='zoom-in'
                   data-aos-anchor-placement='top-bottom'
